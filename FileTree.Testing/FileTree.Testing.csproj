@@ -15,7 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Edument.FileTree.Core\Edument.FileTree.Core.csproj" />
-    <ProjectReference Include="..\TreeCore\TreeCore.csproj" />
+    <ProjectReference Include="..\TreeCore\Edument.TreeCore.csproj" />
   </ItemGroup>
 
 </Project>

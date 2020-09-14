@@ -3,8 +3,10 @@ using System.Collections.Generic;
 
 namespace TreeCore
 {
-    interface ITree
+    // A bit overengineered but could be used for any kind of tree not only filetrees
+    public interface ITree
     {
-        public LinkedList<string> Nodes { get; set; }
+        public INode Root { get;}
+        void AddNode(INode node);
     }
 }

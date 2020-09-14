@@ -4,10 +4,12 @@ using System.Text;
 
 namespace TreeCore
 {
-    interface INode
+    // A bit overengineered but could be used for any kind of treenode not only file treenodes
+    public interface INode
     {
-        public INode Parent { get; set; }
-        public List<INode> Children { get; set; }
-
+        public INode Parent { get; }
+        public LinkedList<INode> Children { get; }
+        public void AddChild(INode child);
+        public string Value { get; }
     }
 }
